@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="56a397a47c184de29380931e9f6c948b" Name="Diagram1" ZoomLevel="88">
+        <EntityTypeShape EntityType="kompasModel.currency" Width="1.5" PointX="0.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="kompasModel.doctype" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="kompasModel.external_document" Width="1.5" PointX="5.25" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="kompasModel.freight" Width="1.5" PointX="3" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="kompasModel.hotel" Width="1.5" PointX="3" PointY="40.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="kompasModel.htplace" Width="1.5" PointX="6" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="kompasModel.meal" Width="1.5" PointX="6" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="kompasModel.opeople" Width="1.5" PointX="10.5" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="kompasModel.order" Width="1.5" PointX="8.25" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="kompasModel.people" Width="1.5" PointX="5.25" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="kompasModel.room" Width="1.5" PointX="6" PointY="42.25" IsExpanded="true" />
+        <AssociationConnector Association="kompasModel.FK_freight_currency" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_hotel_currency" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_order_ccurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_order_ncurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.fk_external_document_doctype" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_external_document_opeople" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_external_document_order" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_OPEOPLE_external_document" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_freight_freight_for_supplement" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_order_freight" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_order_hotel" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_order_shotel" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_order_htplace" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_order_meal" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_order_smeal" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.fk_opeople_order" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.fk_opeople_people" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_order_room" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_order_room_reserve" ManuallyRouted="false" />
+        <AssociationConnector Association="kompasModel.FK_order_sroom" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="kompasModel.status" Width="1.5" PointX="0.75" PointY="0.875" />
+        <AssociationConnector Association="kompasModel.FK_order_status" />
+        <EntityTypeShape EntityType="kompasModel.service" Width="1.5" PointX="5.375" PointY="1.25" />
+        <AssociationConnector Association="kompasModel.FK_freight_backfreight_service" />
+        <AssociationConnector Association="kompasModel.FK_freight_earlydep_service" />
+        <AssociationConnector Association="kompasModel.FK_freight_latedep_service" />
+        <AssociationConnector Association="kompasModel.FK_freight_mixairline_service" />
+        <AssociationConnector Association="kompasModel.FK_order_service" />
+        <EntityTypeShape EntityType="kompasModel.insure" Width="1.5" PointX="3" PointY="50.25" />
+        <AssociationConnector Association="kompasModel.FK_insure_currency" />
+        <AssociationConnector Association="kompasModel.FK_insure_tccurrency" />
+        <AssociationConnector Association="kompasModel.FK_order_insure" />
+        <EntityTypeShape EntityType="kompasModel.visa" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="kompasModel.visapr" Width="1.5" PointX="9.625" PointY="6.25" />
+        <AssociationConnector Association="kompasModel.FK_order_visapr" />
+        <AssociationConnector Association="kompasModel.FK_visapr_visa" />
+        <EntityTypeShape EntityType="kompasModel.reserve" Width="1.5" PointX="1.375" PointY="0.75" />
+        <AssociationConnector Association="kompasModel.FK_order_reserve" />
+        <EntityTypeShape EntityType="kompasModel.class" Width="1.5" PointX="9.375" PointY="1" />
+        <AssociationConnector Association="kompasModel.FK_order_class" />
+        <AssociationConnector Association="kompasModel.FK_order_sfrclass" />
+        <AssociationConnector Association="kompasModel.FK_order_cncurrency" />
+        <EntityTypeShape EntityType="kompasModel.claim" Width="1.5" PointX="12.875" PointY="3" />
+        <AssociationConnector Association="kompasModel.FK_claim_currency" />
+        <AssociationConnector Association="kompasModel.FK_claim_currencyclaim" />
+        <AssociationConnector Association="kompasModel.FK_claim_currencycommission" />
+        <AssociationConnector Association="kompasModel.FK_claim_currencyearlycommission" />
+        <AssociationConnector Association="kompasModel.FK_claim_reserve" />
+        <AssociationConnector Association="kompasModel.FK_claim_status" />
+        <AssociationConnector Association="kompasModel.FK_external_document_claim" />
+        <AssociationConnector Association="kompasModel.FK_opeople_claim" />
+        <AssociationConnector Association="kompasModel.fk_order_claim" />
+        <AssociationConnector Association="kompasModel.fk_people_claim" />
+        <EntityTypeShape EntityType="kompasModel.partner" Width="1.5" PointX="0.75" PointY="19.125" />
+        <AssociationConnector Association="kompasModel.FK_claim_buyer" />
+        <AssociationConnector Association="kompasModel.FK_claim_partner" />
+        <AssociationConnector Association="kompasModel.FK_claim_partner1" />
+        <AssociationConnector Association="kompasModel.FK_claim_partner2" />
+        <AssociationConnector Association="kompasModel.FK_freight_partner" />
+        <AssociationConnector Association="kompasModel.FK_freight_tpartner" />
+        <AssociationConnector Association="kompasModel.FK_hotel_partner" />
+        <AssociationConnector Association="kompasModel.FK_insure_partner" />
+        <AssociationConnector Association="kompasModel.FK_order_owner" />
+        <AssociationConnector Association="kompasModel.FK_order_partner" />
+        <AssociationConnector Association="kompasModel.FK_order_sairline" />
+        <AssociationConnector Association="kompasModel.FK_partner_headpartner" />
+        <AssociationConnector Association="kompasModel.FK_reserve_owner" />
+        <AssociationConnector Association="kompasModel.FK_reserve_partner_parent" />
+        <AssociationConnector Association="kompasModel.FK_reserve_partner1" />
+        <AssociationConnector Association="kompasModel.FK_ROWNER_PARTNER" />
+        <AssociationConnector Association="kompasModel.FK_service_partner" />
+        <AssociationConnector Association="kompasModel.FK_visapr_partner" />
+        <EntityTypeShape EntityType="kompasModel.payment" Width="1.5" PointX="3.375" PointY="20.875" />
+        <EntityTypeShape EntityType="kompasModel.pdetail" Width="1.5" PointX="15.5" PointY="17.125" />
+        <AssociationConnector Association="kompasModel.FK_pdetail_claim" />
+        <AssociationConnector Association="kompasModel.FK_payment_currency" />
+        <AssociationConnector Association="kompasModel.FK_pdetail_currency" />
+        <AssociationConnector Association="kompasModel.FK_payment_partner" />
+        <AssociationConnector Association="kompasModel.FK_payment_payee" />
+        <AssociationConnector Association="kompasModel.FK_pdetail_payment" />
+        <EntityTypeShape EntityType="kompasModel.users" Width="1.5" PointX="0.75" PointY="10.75" />
+        <AssociationConnector Association="kompasModel.FK_GROUPS" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

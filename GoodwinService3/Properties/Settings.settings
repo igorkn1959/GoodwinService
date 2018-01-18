@@ -1,0 +1,31 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GoodwinService3.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PartnerList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2870</Value>
+    </Setting>
+    <Setting Name="BaseCurrency" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Currency" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="StatusList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1, 2, 3, 4, 5, 6, 7</Value>
+    </Setting>
+    <Setting Name="PartPass" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">gto</Value>
+    </Setting>
+    <Setting Name="IpList" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;82.144.198.131&lt;/string&gt;
+  &lt;string&gt;::1&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="CancelClaimUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INTERNET</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
